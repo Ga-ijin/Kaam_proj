@@ -35,6 +35,8 @@ for block in (soup.find("div", { "class" : "list detail eplist" })):
 for block in soup.find_all("div", { "class" : "item_description" }, { "itemprop" : "description" }):
     print(block.text)
 
+
+
 # blocks = soup.select("#content > div:nth-of-type(n+2)")
 #     # 2ime boucle sur les block récupérée
 # for block in blocks:

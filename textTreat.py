@@ -5,10 +5,14 @@ Created on Mon Mar  1 13:34:40 2021
 @author: Sarah
 """
 import pandas as pd
+import os
 
 # In[1]: Initialisation textes et variables
 
-text = open("kaam_script_livre1part1_CLEANED.txt", "r", encoding = 'utf-8')
+dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj'
+os.chdir(dir)
+
+text = open('kaam_script_livre1part1_CLEANED.txt', "r", encoding = 'utf-8')
 list_ep_txt = open("list_ep.txt", 'r', encoding = 'utf-8')
 list_persos_xlsx = pd.read_excel('list_persos.xlsx', encoding = 'utf-8')
 
@@ -51,7 +55,9 @@ list_script.append(txt_modif)
 
 dfEpisodes['script'] = list_script
 
-# Scrapper les notes des épisodes sur imDB et les stocker dans une colonne
+# Séparer le nom du ou des scénariste(s) de chaque épisode
+
+# Scrapper les notes et le nombre de votes des épisodes sur imDB et les stocker dans une colonne
 
 # Réaliser le workbench de la bdd
 
