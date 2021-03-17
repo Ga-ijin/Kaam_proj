@@ -17,32 +17,20 @@ req.text
 r = requests.get(url, headers={"User-Agent": "Firefox"})
 soup = BeautifulSoup(req.text, 'lxml')
 
-print(soup)
+# print(soup)
 
-print(soup.find("div", { "class" : "info" }))
+# print(soup.find("div", { "class" : "info" }))
 
-print(soup.find("div", { "class" : "item_description" }))
+# print(soup.find("div", { "class" : "item_description" }))
 
-print(soup.find("div", { "class" : "list detail eplist" }))
+# print(soup.find("div", { "class" : "list detail eplist" }))
 
 listep = []
-for block in soup.find("div", { "class" : "list detail eplist" }):
-    listep.append(block)
+# for block in soup.find("div", { "class" : "list detail eplist" }):
+#     listep.append(block)
     
-for block in (soup.find("div", { "class" : "list detail eplist" })):
-    print(soup.find_all("div", { "class" : "item_description" }, { "itemprop" : "description" }))
+# for block in (soup.find("div", { "class" : "list detail eplist" })):
+#     print(soup.find_all("div", { "class" : "item_description" }, { "itemprop" : "description" }))
 
 for block in soup.find_all("div", { "class" : "item_description" }, { "itemprop" : "description" }):
     print(block.text)
-
-
-
-# blocks = soup.select("#content > div:nth-of-type(n+2)")
-#     # 2ime boucle sur les block récupérée
-# for block in blocks:
-#     fact = block.select_one("p")
-#     if fact is not None:
-#         id = block.select_one("ul.star-rating").attrs['id']
-#         #print(id)
-#         rate = block.select_one("span.out5Class")
-#         vote = block.select_one("span.votesClass")
