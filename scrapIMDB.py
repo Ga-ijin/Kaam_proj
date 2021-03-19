@@ -17,20 +17,7 @@ req.text
 r = requests.get(url, headers={"User-Agent": "Firefox"})
 soup = BeautifulSoup(req.text, 'lxml')
 
-# print(soup)
-
-# print(soup.find("div", { "class" : "info" }))
-
-# print(soup.find("div", { "class" : "item_description" }))
-
-# print(soup.find("div", { "class" : "list detail eplist" }))
-
 listep = []
-# for block in soup.find("div", { "class" : "list detail eplist" }):
-#     listep.append(block)
-    
-# for block in (soup.find("div", { "class" : "list detail eplist" })):
-#     print(soup.find_all("div", { "class" : "item_description" }, { "itemprop" : "description" }))
 
 for block in soup.find_all("div", { "class" : "item_description" }, { "itemprop" : "description" }):
     print(block.text)
