@@ -9,7 +9,7 @@ import os
 
 # In[1]: Initialisation textes et variables
 
-dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj'
+dir = r'C:\Users\Greta\Documents\GitHub\Kaam_proj'
 os.chdir(dir)
 
 text = open('kaam_script_livre1part1_CLEANED.txt', "r", encoding = 'utf-8')
