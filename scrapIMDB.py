@@ -80,24 +80,22 @@ print(req)
 r = requests.get(url, headers={"User-Agent": "Firefox"})
 soup = BeautifulSoup(req.text, 'lxml')
 
-listDiv = []
-listCheck = []
 cptDf = 0
 
-for div in soup.find_all('div'):
-    listDiv.append(div.text)
+# On stocke toutes les div contenant les informations pour chaque épisode dans une liste
+divs = soup.find_all('div', attrs={'style': 'background-color:#FFFFFF;padding: 5px 10px 0px 15px'})
 
-
-for i in range(len(listDiv)):
-    if("Numéro de production" in listDiv[i]):
-        tuple_ep = (listDiv[i+3], listDiv[i+4], listDiv[i+5])
-        listCheck.append(tuple_ep)
-
-for i in range(len(listDiv)):
-    if("Numéro de production" in listDiv[i]):
-        # tuple_ep = (listDiv[i+3], listDiv[i+4], listDiv[i+5])
+# Dans cette liste, on recherche les réalisateur(s), scénariste(s) et résumé de chaque bloc
+for div in divs:
+    rea = div.find("b", text="Réalisation")
+    if rea:
+        dfEpComment.loc[cptDf, 'Realisation'] = (rea.findNext('div').text)
         
-        dfEpComment.loc[cptDf, 'Realisation'] = listDiv[i+3]
-        dfEpComment.loc[cptDf, 'Scenario'] = listDiv[i+4]
-        dfEpComment.loc[cptDf, 'Resume Episode VF'] = listDiv[i+5]
-        cptDf+=1
+    scenar = div.find("b", text="Scénario")
+    if scenar:
+        dfEpComment.loc[cptDf, 'Scenario'] = (scenar.findNext('div').text)
+        
+    resume = div.find("b", text="Résumé détaillé")
+    if resume:
+        dfEpComment.loc[cptDf, 'Resume Episode VF'] = (resume.findNext('div').text)
+    cptDf+=1
