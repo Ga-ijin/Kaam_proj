@@ -9,7 +9,7 @@ import os
 
 # In[1]: Initialisation textes et variables
 
-dir = r'C:\Users\Greta\Documents\GitHub\Kaam_proj'
+dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj'
 os.chdir(dir)
 
 text = open('kaam_script_livre1part1_CLEANED.txt', "r", encoding = 'utf-8')
@@ -54,10 +54,6 @@ list_script.pop(0)
 list_script.append(txt_modif)
 
 dfEpisodes['script'] = list_script
-
-# Séparer le nom du ou des scénariste(s) de chaque épisode
-
-# Scrapper les notes et le nombre de votes des épisodes sur imDB et les stocker dans une colonne
 
 # Réaliser le workbench de la bdd
 

@@ -99,3 +99,5 @@ for div in divs:
     if resume:
         dfEpComment.loc[cptDf, 'Resume Episode VF'] = (resume.findNext('div').text)
     cptDf+=1
+    
+# In[7]:
