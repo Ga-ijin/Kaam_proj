@@ -12,7 +12,7 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT #permet de créer la 
 from psycopg2 import Error
 import yaml
 
-login = yaml.safe_load(open('login.yml', 'r'))
+login = yaml.safe_load(open('logins.yml', 'r'))
 login = login['postgres']
 
 try:

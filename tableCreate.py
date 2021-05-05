@@ -8,7 +8,7 @@ import psycopg2
 from psycopg2 import Error
 import yaml
 
-login = yaml.safe_load(open('login.yml', 'r'))
+login = yaml.safe_load(open('logins.yml', 'r'))
 login = login['postgres']
 
 # Création des tables de la bdd kaam_db
