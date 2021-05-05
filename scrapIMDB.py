@@ -100,4 +100,18 @@ for div in divs:
         dfEpComment.loc[cptDf, 'Resume Episode VF'] = (resume.findNext('div').text)
     cptDf+=1
     
-# In[7]:
+# In[7]: Création des csv pour backup et upload dans la base
+
+numLivre = 1
+numTome = 1
+nbEp = 100
+
+dfEpisodeTable = pd.DataFrame(np.arange(1,nbEp+1), columns=['num_ep'])
+dfEpisodeTable['num_livre'] = numLivre
+dfEpisodeTable['num_tome'] = numTome
+dfEpisodeTable.insert(2, 'num_livre', numLivre)
+dfEpisodeTable.insert(3, 'num_tome', numTome)
+
+# dfRating = pd.DataFrame(np.arange(1,101), columns=['num_ep'])
+# dfRating['rating'] = dfEpComment['Note']
+# dfRating['nbVotes'] = dfEpComment['NbVotes']

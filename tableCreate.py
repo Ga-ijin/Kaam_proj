@@ -7,6 +7,10 @@ Created on Fri Apr 16 18:01:26 2021
 import psycopg2
 from psycopg2 import Error
 import yaml
+import os
+
+dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj'
+os.chdir(dir)
 
 login = yaml.safe_load(open('logins.yml', 'r'))
 login = login['postgres']
@@ -24,6 +28,7 @@ try:
     create_table_ep ='''CREATE TABLE episode
                             (ep_id SMALLSERIAL PRIMARY KEY,
                             livre SMALLINT NOT NULL,
+                            tome SMALLINT NOT NULL,
                             num_ep SMALLINT NOT NULL,
                             titre_ep VARCHAR (100) NOT NULL,
                             script VARCHAR (5000) NOT NULL,

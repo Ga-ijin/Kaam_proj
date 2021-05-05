@@ -8,6 +8,10 @@ Created on Wed May  5 09:52:41 2021
 import psycopg2
 from psycopg2 import Error
 import yaml
+import os
+
+dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj'
+os.chdir(dir)
 
 login = yaml.safe_load(open('logins.yml', 'r'))
 login = login['postgres']
@@ -22,31 +26,31 @@ try:
                               database="kaam_db")    
     cursor = conn.cursor()
     
-    # create_fk_rating = ''' ALTER TABLE rating
-    #                     ADD CONSTRAINT fk_rating_ep
-    #                     FOREIGN KEY(ep_id)
-    #                     REFERENCES episode(ep_id)
-    #                     ON DELETE CASCADE
-    #                     ON UPDATE CASCADE;'''
-    # cursor.execute(create_fk_rating)
-    # conn.commit()
-    # print("FK 'fk_rating_ep' created successfully in PostgreSQL")
+    create_fk_rating = ''' ALTER TABLE rating
+                        ADD CONSTRAINT fk_rating_ep
+                        FOREIGN KEY(ep_id)
+                        REFERENCES episode(ep_id)
+                        ON DELETE CASCADE
+                        ON UPDATE CASCADE;'''
+    cursor.execute(create_fk_rating)
+    conn.commit()
+    print("FK 'fk_rating_ep' created successfully in PostgreSQL")
     
-    # create_fks_casting_ep_char = ''' ALTER TABLE casting
-    #                         ADD CONSTRAINT fk_casting_ep
-    #                         FOREIGN KEY(ep_id)
-    #                         REFERENCES episode(ep_id)
-    #                         ON DELETE CASCADE
-    #                         ON UPDATE CASCADE;
-    #                         ALTER TABLE casting
-    #                         ADD CONSTRAINT fk_casting_char
-    #                         FOREIGN KEY(char_id)
-    #                         REFERENCES character(char_id)
-    #                         ON DELETE CASCADE
-    #                         ON UPDATE CASCADE;'''
-    # cursor.execute(create_fks_casting_ep_char)
-    # conn.commit()
-    # print("FK 'fk_casting_ep_char' created successfully in PostgreSQL")
+    create_fks_casting_ep_char = ''' ALTER TABLE casting
+                            ADD CONSTRAINT fk_casting_ep
+                            FOREIGN KEY(ep_id)
+                            REFERENCES episode(ep_id)
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE;
+                            ALTER TABLE casting
+                            ADD CONSTRAINT fk_casting_char
+                            FOREIGN KEY(char_id)
+                            REFERENCES character(char_id)
+                            ON DELETE CASCADE
+                            ON UPDATE CASCADE;'''
+    cursor.execute(create_fks_casting_ep_char)
+    conn.commit()
+    print("FK 'fk_casting_ep_char' created successfully in PostgreSQL")
     
     create_fk_people = ''' ALTER TABLE people
                             ADD CONSTRAINT fk_people_char
