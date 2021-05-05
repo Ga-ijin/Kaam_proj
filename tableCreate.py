@@ -6,12 +6,16 @@ Created on Fri Apr 16 18:01:26 2021
 """
 import psycopg2
 from psycopg2 import Error
+import yaml
+
+login = yaml.safe_load(open('login.yml', 'r'))
+login = login['postgres']
 
 # Création des tables de la bdd kaam_db
 
 try:    
-    conn = psycopg2.connect(user="postgres",
-                              password="8774755Garapostgresql!",
+    conn = psycopg2.connect(user=login['user'],
+                              password=login['password'],
                               host="127.0.0.1",
                               port="5432",
                               database="kaam_db")    

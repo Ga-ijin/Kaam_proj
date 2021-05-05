@@ -10,10 +10,14 @@ Created on Thu Apr 15 14:21:17 2021
 import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT #permet de créer la DB
 from psycopg2 import Error
+import yaml
+
+login = yaml.safe_load(open('login.yml', 'r'))
+login = login['postgres']
 
 try:
-    conn = psycopg2.connect(user="postgres",
-                              password="8774755Garapostgresql!",
+    conn = psycopg2.connect(user=login['user'],
+                              password=login['password'],
                               host="127.0.0.1",
                               port="5432",
                               database="postgres")
