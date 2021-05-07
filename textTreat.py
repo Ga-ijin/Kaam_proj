@@ -6,6 +6,7 @@ Created on Mon Mar  1 13:34:40 2021
 """
 import pandas as pd
 import os
+import numpy as np
 
 # In[1]: Initialisation textes et variables
 
@@ -14,7 +15,7 @@ os.chdir(dir)
 
 text = open('kaam_script_livre1part1_CLEANED.txt', "r", encoding = 'utf-8')
 list_ep_txt = open("list_ep.txt", 'r', encoding = 'utf-8')
-list_persos_xlsx = pd.read_excel('list_persos.xlsx', encoding = 'utf-8')
+list_persos = pd.read_csv('list_persos.csv', sep=";", encoding = 'utf-8')
 
 dfEpisodes = pd.DataFrame()
 dfPersos = pd.DataFrame()
@@ -35,14 +36,14 @@ for line in list_ep_txt:
     tuple_ep = (numLivre, cpt_ep, line.strip())
     list_ep.append(tuple_ep)
 
-dfEpisodes = pd.DataFrame(list_ep, columns=['livre', 'num_ep','titre'])
+dfEpisodes = pd.DataFrame(list_ep, columns=['livre', 'num_ep','titre_ep'])
 
-dfPersos = pd.DataFrame(list_persos_xlsx, columns=['personnage', 'description', 'chevalier'])
+dfPersos = pd.DataFrame(list_persos, columns=['char_id','char_name', 'char_descr', 'knight'])
 
 # In[3]: Séparation des scripts des épisodes
     
 for i in dfEpisodes.index:
-    titre_ep = dfEpisodes['titre'][i]
+    titre_ep = dfEpisodes['titre_ep'][i]
     list_sep.append(str(titre_ep) + '\n')
 
 for sep in list_sep:
@@ -55,8 +56,13 @@ list_script.append(txt_modif)
 
 dfEpisodes['script'] = list_script
 
-# Réaliser le workbench de la bdd
-
-# Uploader le df dans la BDD
-
 text.close()
+
+nbEp = len(dfEpisodes)
+dfEpisodes.insert(0,'ep_id', np.arange(1,nbEp+1))
+
+# In[4]: Création des csv pour backup pour upload dans la base
+
+dfEpisodes.to_csv('csvEpisode_part1.csv', sep='\t', index=False, encoding='utf-8')
+dfPersos.to_csv('csvPersos.csv', sep='\t', index=False, encoding='utf-8')
+

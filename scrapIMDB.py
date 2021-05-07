@@ -106,15 +106,12 @@ for div in divs:
         dfEpComment.loc[cptDf, 'Resume Episode VF'] = (resume.findNext('div').text)
     cptDf+=1
     
-# In[7]: Création des csv pour backup et upload dans la base
+# In[7]: Création des csv pour backup pour upload dans la base
+    
+#Table episode [suite] sur base du csv partiellement rempli
 
-numLivre = 1
-nbEp = 100
+dfEpisodes = pd.read_csv('csvEpisode_part1.csv', sep='\t')
+dfEpisodes["rea"] = dfEpComment['Realisation']
+dfEpisodes["scenar"] = dfEpComment['Scenario']
+dfEpisodes.to_csv('csvEpisode_part2.csv', sep='\t', index=False, encoding='utf-8')
 
-#Df de la table episode
-columns=['livre','num_ep','titre_ep','script','rea','scenar']
-dfEpisodeTable = pd.DataFrame(columns=columns)
-dfEpisodeTable['num_ep'] = np.arange(1,nbEp+1)
-dfEpisodeTable['livre'] = numLivre
-
-dfEpisodeTable.to_csv('csvEpisode.csv', sep='\t', index=False, encoding='utf-8')

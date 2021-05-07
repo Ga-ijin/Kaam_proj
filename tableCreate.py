@@ -31,9 +31,7 @@ try:
                             tome SMALLINT NOT NULL,
                             num_ep SMALLINT NOT NULL,
                             titre_ep VARCHAR (100) NOT NULL,
-                            script VARCHAR (5000) NOT NULL,
-                            rea SMALLINT[],
-                            scenar SMALLINT[]); '''
+                            script VARCHAR (5000) NOT NULL; '''
          
     cursor.execute(create_table_ep)
     conn.commit()
