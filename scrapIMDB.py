@@ -5,11 +5,17 @@ Created on Thu Mar  4 15:55:29 2021
 @author: Sarah
 """
 
+# In[0]: Initialisation textes et variables
+
 import requests
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
 import numpy as np
+import os
+
+dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj'
+os.chdir(dir)
 
 # In[0]: Requête Beautiful Soup
 
@@ -103,15 +109,12 @@ for div in divs:
 # In[7]: Création des csv pour backup et upload dans la base
 
 numLivre = 1
-numTome = 1
 nbEp = 100
 
-dfEpisodeTable = pd.DataFrame(np.arange(1,nbEp+1), columns=['num_ep'])
-dfEpisodeTable['num_livre'] = numLivre
-dfEpisodeTable['num_tome'] = numTome
-dfEpisodeTable.insert(2, 'num_livre', numLivre)
-dfEpisodeTable.insert(3, 'num_tome', numTome)
+#Df de la table episode
+columns=['livre','num_ep','titre_ep','script','rea','scenar']
+dfEpisodeTable = pd.DataFrame(columns=columns)
+dfEpisodeTable['num_ep'] = np.arange(1,nbEp+1)
+dfEpisodeTable['livre'] = numLivre
 
-# dfRating = pd.DataFrame(np.arange(1,101), columns=['num_ep'])
-# dfRating['rating'] = dfEpComment['Note']
-# dfRating['nbVotes'] = dfEpComment['NbVotes']
+dfEpisodeTable.to_csv('csvEpisode.csv', sep='\t', index=False, encoding='utf-8')
