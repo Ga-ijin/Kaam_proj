@@ -63,6 +63,6 @@ dfEpisodes.insert(0,'ep_id', np.arange(1,nbEp+1))
 
 # In[4]: Création des csv pour backup pour upload dans la base
 
-dfEpisodes.to_csv('csvEpisode_part1.csv', sep='\t', index=False, encoding='utf-8')
-dfPersos.to_csv('csvPersos.csv', sep='\t', index=False, encoding='utf-8')
+dfEpisodes.to_csv('csvEpisode_part1.csv', sep=';', index=False, encoding="utf-8")
+dfPersos.to_csv('csvPersos.csv', sep=';', index=False, encoding='utf-8')
 

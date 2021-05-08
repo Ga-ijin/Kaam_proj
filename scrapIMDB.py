@@ -70,10 +70,10 @@ for el in epDesc:
 
 dfEpComment = pd.DataFrame(rateClean, columns=['Note'])
 dfEpComment['NbVotes'] = nbVotesClean
-dfEpComment['Resume Episode VA'] = epDescClean
-dfEpComment['Resume Episode VF'] = np.nan
-dfEpComment['Realisation'] = np.nan
-dfEpComment['Scenario'] = np.nan
+dfEpComment['resume_VA'] = epDescClean
+dfEpComment['resume_VF'] = ""
+dfEpComment['Realisation'] = ""
+dfEpComment['Scenario'] = ""
 # del dfEpComment
 
 # In[6]: Récupération du résumé des épisodes en VF sur Wikipedia
@@ -103,15 +103,28 @@ for div in divs:
         
     resume = div.find("b", text="Résumé détaillé")
     if resume:
-        dfEpComment.loc[cptDf, 'Resume Episode VF'] = (resume.findNext('div').text)
+        dfEpComment.loc[cptDf, 'resume_VF'] = (resume.findNext('div').text)
     cptDf+=1
-    
+
+def stripping(case):
+    case = case.replace("\n", " ").strip('"')
+    return case
+
+dfEpComment["resume_VF"] = dfEpComment["resume_VF"].apply(stripping)
+
 # In[7]: Création des csv pour backup pour upload dans la base
     
 #Table episode [suite] sur base du csv partiellement rempli
 
-dfEpisodes = pd.read_csv('csvEpisode_part1.csv', sep='\t')
-dfEpisodes["rea"] = dfEpComment['Realisation']
-dfEpisodes["scenar"] = dfEpComment['Scenario']
-dfEpisodes.to_csv('csvEpisode_part2.csv', sep='\t', index=False, encoding='utf-8')
+dfEpisodes = pd.read_csv('csvEpisode_part1.csv', sep=';')
+dfFinal = dfEpisodes.join(dfEpComment, how='inner')
+# dfFinal.to_csv('csvFinal.csv', sep=';', index=False, encoding='utf-8')
+# dfTableEp = pd.DataFrame()
+dfTableEp = dfFinal[["ep_id","livre","num_ep","titre_ep","script","resume_VF","resume_VA"]]
+dfTableEp.columns=["ep_id","livre","num_ep","titre_ep","script","resume_vf","resume_va"]
 
+dfTableEp["script"] = dfTableEp["script"].apply(stripping)
+
+dfTableEp.to_csv('csvEpisode.csv', sep=';', encoding='utf-8', index=False, header=False)
+
+dfTest = pd.read_csv("csvEpisode.csv", sep=";")

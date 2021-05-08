@@ -1,4 +1,4 @@
-ep_id;livre;num_ep;titre_ep;script
+ep_id;livre;num_ep;titre_ep;script;Note;NbVotes;resume_VA;resume_VF;Realisation;Scenario
 1;1;1;Heat;"
 A.Astier
 
@@ -170,7 +170,10 @@ Il émet un cri étrange, sans aucun rapport avec le chevreuil.
 
 2
 
-"
+";8.1;48;Stuck in the forest during a battle, King Arthur and Léodagan listen with despair to Perceval's crazy ideas to avoid the enemies.    ;"
+Arthur, Léodagan et Perceval sont isolés en forêt pendant une bataille et se cachent derrière des arbres. Ils cherchent comment se tirer de cette situation, mais Perceval suggère de très nombreuses solutions farfelues (telles qu’un allumage d’incendie pour débusquer les ennemis), et manque de les faire repérer.";"
+Alexandre Astier";"
+Alexandre Astier"
 2;1;2;Les Tartes Aux Myrtilles;"
 A.Astier
 
@@ -343,7 +346,10 @@ LÉODAGAN (over) — On plaisante, on plaisante…
 
 3
 
-"
+";8.2;46;Arthur, Guinevere and Leodagan are forced to eat the inedible blueberry pie cooked by Dame Séli.    ;"
+Séli a cuisiné une tarte aux myrtilles qui s’avère immangeable, mais Arthur, Guenièvre et Léodagan sont contraints de la manger. Ce dessert lance une discussion enlevée autour des traditions familiales et de l’absence d’héritier.";"
+Alexandre Astier";"
+Alexandre Astier"
 3;1;3;La Table De Breccan;"
 A.Astier
 
@@ -506,7 +512,10 @@ LA DAME DU LAC (over) — Et faites attention au cuir, c’est joli mais c’est
 
 4
 
-"
+";7.5;41;The round table ordered by King Arthur has arrived.    ;"
+Un artisan vient de livrer une table ronde commandée par Arthur. Ce dernier regrette qu’elle ne soit pas en pierre, et Breccan, l’artisan, le prévient de se méfier du cuir car cela est salissant. Plusieurs personnes, comme le père Blaise et la Dame du Lac, viennent voir le résultat et font des commentaires.";"
+Alexandre Astier";"
+Alexandre Astier"
 4;1;4;Le Chevalier Mystère;"
 A.Astier
 
@@ -671,7 +680,10 @@ PERCEVAL (over) — N’empêche que je suis une légende.
 
 5
 
-"
+";7.8;39;King Arthur and The Knights of the Round Table are discussing the fate of a mysterious knight called Provençal le Gaulois, or is it Perceval?    ;"
+Autour de la Table ronde flambant neuve, les chevaliers discutent d’un chevalier mystère : Provençal le Gaulois. Il s’avère que c’est en fait Perceval le Gallois, qui s'est trompé en donnant son propre nom. Le mystère demeure toutefois : Provençal le Gaulois a une excellente réputation, alors que Perceval pas du tout.";"
+Alexandre Astier";"
+Alexandre Astier"
 5;1;5;Le Fléau De Dieu;"
 A.Astier
 
@@ -856,7 +868,10 @@ ATTILA (over) — Excusez-moi, j’ai fait des saletés.
 
 6
 
-"
+";7.6;40;King Arthur, Léodagan and Bohort negotiate with Attila the Hun in the throne room, who demands all the gold of Kaamelott.    ;"
+Arthur, Léodagan et Bohort doivent négocier face à Attila, roi des Huns. La réunion se passe dans la salle du trône et Attila exige en premier lieu l’intégralité de l’or de Kaamelott sous peine de tout détruire. Face aux protestations du roi, et en dépit de ses terribles cris, Attila montre qu’il n’est pas aussi terrifiant que sa réputation l’affirme. Ainsi, après d’âpres négociations, le chef barbare crie victoire : il repart avec un plat cuisiné (mais froid).";"
+Alexandre Astier";"
+Alexandre Astier"
 6;1;6;Le Garde Du Corps;"
 A.Astier
 
@@ -1049,7 +1064,10 @@ ARTHUR (over) — En fait, c’est pas désagréable de se sentir protégé…
 
 7
 
-"
+";7.7;40;King Arthur is close to sign a peace treaty and is assigned a new bodyguard, who follows him everywhere, even when he is in bed with his mistresses.    ;"
+Un traité de paix est sur le point d’être signé, et un garde du corps est affecté à la protection d’Arthur. Ce garde du corps, très zélé, ne quitte pas des yeux le roi, y compris lorsqu’il est au lit avec une de ses maîtresses, et menace de tuer quiconque s'approche trop près de lui et pourrait ainsi menacer sa sécurité.";"
+Alexandre Astier";"
+Alexandre Astier"
 7;1;7;Des Nouvelles Du Monde;"
 A.Astier
 
@@ -1276,7 +1294,10 @@ BUZIT (over) — … eh ben je vous raconte pas ce qui tombe !
 
 8
 
-"
+";7.3;37;A barb invited to dinner sings odes far from accurate.    ;"
+Guenièvre et sa mère ont convoqué un barde au dîner, qui leur chante les nouvelles du monde. Les chansons sont atroces et les nouvelles sont vagues, y compris une qui concernerait la mort d'un roi, peut-être le roi Loth d'Orcanie. Mais le barde ne parvient pas à se souvenir de qui il s'agit exactement.";"
+Alexandre Astier";"
+Alexandre Astier"
 8;1;8;Codes Et Stratégies;"
 A.Astier
 
@@ -1463,7 +1484,10 @@ LÉODAGAN (over) — Ouais, alors faut voir, peut-être qu’en changeant le cod
 
 9
 
-"
+";7.6;38;King Arthur and his knights are sending signals to their troops from a hill nearby, but nobody is following his orders.    ;"
+Arthur et ses chevaliers dirigent une bataille depuis une colline. Mais les hommes ne regardent pas les signaux que l’état-major leur envoie, ce qui les mène vers une défaite certaine et conduit Arthur à une grosse crise de nerfs durant la bataille.";"
+Alexandre Astier";"
+Alexandre Astier"
 9;1;9;Le Maître d’Armes;"
 A.Astier
 
@@ -1628,7 +1652,10 @@ LE MAÎTRE D’ARME (over) — Alors ça vient ? Petite bite !
 
 10
 
-"
+";8.2;41;King Arthur is training with his fencing master who insults him copiously. The only way for him to fight his King, and urges him to call him names too. At first reluctant, the King seems to enjoy it very much, to the despair of his fencing master.    ;"
+Arthur se fait entrainer par son maître d’armes, qui stimule le combat en insultant copieusement le roi. Ce dernier n’apprécie guère, et le fait savoir. Le maître d'armes, dévoué à son roi, lui explique que sans les insultes, il leur serait difficile d'avoir envie de se battre l'un contre l'autre. Il exhorte Arthur à suivre son exemple. Arthur entre un peu trop bien dans le jeu : il utilise des blessures intimes du maître. Cela stimule d'autant plus les combattants.";"
+Alexandre Astier";"
+Alexandre Astier"
 10;1;10;Le Négociateur;"
 A.Astier
 
@@ -1815,7 +1842,10 @@ ARTHUR (over) — Il y a un paquet de trucs qui vont trop vite pour vous…
 
 11
 
-"
+";7.5;40;Kaamelott is under attack and Bohort has made an unacceptable deal with the enemy. King Arthur refuses it and sends his troops to the fight.    ;"
+Des barbares sont aux portes du domaine, et Arthur et ses chevaliers s’apprêtent à partir les chasser. Mais Bohort a négocié avec eux, et a obtenu qu’ils renoncent à attaquer en échange des marais, ce qui fâche Arthur et Léodagan. En effet, pour une fois, ils étaient sûrs de gagner. D'autant plus que les terres que Bohort a cédé aux envahisseurs entourent le château. Finalement la bataille a bien lieu, mais au pied des remparts.";"
+Alexandre Astier";"
+Alexandre Astier"
 11;1;11;Dîner Dansant;"
 A.Astier
 
@@ -1976,7 +2006,10 @@ LÉODAGAN (over) — … c’est chez Gauvain.
 
 12
 
-"
+";7.6;37;A family diner at Kaamelott, where everyone wants to be elsewhere, turn to another pitched battle.    ;"
+C’est le dîner de famille avec Léodagan, son épouse Séli, ses deux enfants Yvain et Guenièvre, ainsi que Arthur. Yvain aurait préféré aller diner chez son ami Gauvain, mais sa mère s’y oppose. Arthur se plaint alors que tous les diners en famille dégénèrent en dispute. Celui-ci n’échappe pas à la règle.";"
+Alexandre Astier";"
+Alexandre Astier"
 12;1;12;Le Sixième Sens;"
 A.Astier
 
@@ -2153,7 +2186,10 @@ PERCEVAL (over) — Quand je pense qu’on a failli gâcher un destin pareil à 
 
 13
 
-"
+";7.8;39;King Arthur has Summoned Perceval and Karadoc at the Round Table as the lady of the lake would like to reveal Perceval's fate. King Arthur struggles to explain why he is the only one able to see her.    ;"
+Karadoc et Perceval sont convoqués à la Table ronde. C’est la Dame du Lac qui veut les voir, et Arthur, seul avec eux, leur explique qu’ils ne pourront pas la voir, sans succès. Arrivée, elle explique que Perceval aura un destin exceptionnel, à la grande surprise du roi.";"
+Alexandre Astier";"
+Alexandre Astier"
 13;1;13;Arthur Et La Question;"
 A.Astier
 
@@ -2310,7 +2346,10 @@ ARTHUR (OVER) — Vous avez raison, c’est plus sympa quand on se raconte nos j
 
 14
 
-"
+";7.7;36;Léodagan has failed to get a thief to talk. He seeks help from Venec who sells a vast array of instruments of torture.    ;"
+Un voleur nargue l’autorité du roi en refusant de dénoncer ses complices. Léodagan propose de le torturer, et fait venir Venec pour qu'il présente ses produits à  Arthur et Bohort. De son côté, Guenièvre voudrait que Arthur lui raconte ses journées.";"
+Alexandre Astier";"
+Alexandre Astier"
 14;1;14;Monogame;"
 A.ASTIER
 
@@ -2487,7 +2526,10 @@ LE RÉPURGATEUR (OVER) — Ça prend cinq minutes et puis après on est tranquil
 
 15
 
-"
+";7.3;40;King Arthur refuses to oulaw polygamy.    ;"
+Le Répurgateur vient soumettre au roi une nouvelle loi prête-à-signer, visant à interdire la polygamie. Arthur refuse catégoriquement.";"
+Alexandre Astier";"
+Alexandre Astier"
 15;1;15;Les Défis De Merlin;"
 F. RAULT – A.ASTIER
 
@@ -2650,7 +2692,10 @@ ARTHUR (OVER) — Un de ces jours, faudra vraiment que vous disiez ce que c’es
 
 16
 
-"
+";8.1;43;A foreign wizard defies Merlin over the ownership of a nearby land.    ;"
+Elias de Kelliwic’h, enchanteur de Calédonie, se présente à la cour du roi et réclame la jouissance du terrain de la Butte aux Cerfs, sous la menace d'une pluie de calamités. Merlin, qui craint sa puissance, lui lance plusieurs défis que l’enchanteur de Bretagne perd les uns après les autres. Cela ne rassure pas le roi sur les capacités de Merlin.";"
+Alexandre Astier";"
+Alexandre Astier - Fabien Rault"
 16;1;16;Le Banquet Des Chefs;"
 A.ASTIER
 
@@ -2787,7 +2832,10 @@ VENEC (OVER) — Avec ces gros tarés de Chefs de Clan, ça fera ton sur ton.
 
 17
 
-"
+";7.5;41;Everyone is helping with the upcoming festivities in grand style while Camelot gets ready to receive the chieftains.    ;"
+À Kaamelott, on prépare le banquet des chefs de clans. Bohort veut servir des fruits de saison, tandis que Venec insiste pour qu’ils commandent plusieurs douzaines de femmes, et propose de fournir trois porcs par personne.";"
+Alexandre Astier";"
+Alexandre Astier"
 17;1;17;Le Signe;"
 F.RAULT-A.ASTIER
 
@@ -2948,7 +2996,10 @@ ARTHUR (OVER) — On coule du nez quand on a le choléra ?
 
 18
 
-"
+";7.4;39;A dead crow is found in front of the King's door. He asks Merlin if it's a bad sign.    ;"
+Un corbeau mort est retrouvé devant la porte d’Arthur. Ce dernier interroge Merlin pour comprendre le sens de ce présage.";"
+Alexandre Astier";"
+Fabien Rault"
 18;1;18;En Forme De Graal;"
 A.ASTIER
 
@@ -3109,7 +3160,10 @@ PERCEVAL (OVER) — Si Joseph d’Arimathie a pas été trop con, vous pouvez ê
 
 19
 
-"
+";7.8;36;The knights of the Round Table enter a heated debate about the true shape of the Graal.    ;"
+Lors de la réunion de la Table ronde, Bohort indique qu’il a reçu une piste : le Graal n’est pas un vase ou une coupe, mais un « récipient ». Les autres discutent de la forme du Graal.";"
+Alexandre Astier";"
+Alexandre Astier"
 19;1;19;Le Repos Du Guerrier;"
 A.ASTIER
 
@@ -3330,7 +3384,10 @@ PERCEVAL (OVER) — C’est pour savoir si on en parle plutôt maintenant ou si 
 
 20
 
-"
+";7.5;37;The King is subject to criticism for having his mood depending on whether he had spent his night with the Queen or his mistresses.    ;"
+Demetra, Perceval et Guenièvre reprochent à Arthur d’avoir l’humeur variable : après quelques nuits avec Demetra, il serait calme et généreux, mais après quelques nuits avec Guenièvre, il deviendrait agressif et cinglant.";"
+Alexandre Astier";"
+Alexandre Astier"
 20;1;20;La Dent De Requin;"
 A.ASTIER
 
@@ -3521,7 +3578,10 @@ ARTHUR (OVER) — Non, là-dessus, on a une avance considérable.
 
 21
 
-"
+";7.5;37;During a battle Merlin needs a shark tooth for his magic spell. Perceval and Karadoc are sent back to Camelot to get one. Meanwhile Merlin has found a possible replacement, but the spell only made the enemy laughing out loud.    ;"
+Perceval et Karadoc ont été envoyés chez Merlin chercher une dent de requin dont il a besoin sur le champ de bataille pour lancer un sort sur l’ennemi. Les deux amis, parvenus à la taverne avec l’objet, décident apeurés par une prétendue malédiction de le faire brûler par l’aubergiste. Pendant ce temps, Merlin parvient à trouver une dent de furet en forêt et tente de lancer le sort. Celui-ci ne parvient qu’à provoquer une crise de fou rire chez l’armée adverse. Toutefois la diversion permet à Arthur de remporter la bataille, et d'élaborer une nouvelle tactique : passer pour des incapables en un temps record.";"
+Alexandre Astier";"
+Alexandre Astier"
 21;1;21;La Taxe Militaire;"
 A.ASTIER
 
@@ -3690,7 +3750,10 @@ JACCA (OVER) — Non, mais je vais bien réussir à les trouver, les deux mille 
 
 22
 
-"
+";7.5;35;A presumed dead nobleman arrives at Camelot to complain that he doesn't benefit of the tax exemptions accorded to nobles.    ;"
+Le seigneur Jacca, que Léodagan croyait mort, vient protester contre une taxe que le royaume lui réclame, alors qu’il est noble. Les ministres d’Arthur lui répondent que c’est une taxe normale décidée pour tous les seigneurs non combattants. Jacca hésite alors entre payer, tout en se plaignant de ne pas avoir la somme, et rejoindre l’armée, tout en espérant un poste planqué. Sommé de payer tout en étant interdit de prélever l'argent sur ses paysans, Jacca se tâte.";"
+Alexandre Astier";"
+Alexandre Astier"
 22;1;22;La Queue Du Scorpion;"
 A.ASTIER
 
@@ -3859,7 +3922,10 @@ GRÜDÜ (OVER) — En plus, il y en avait un, il était mi-ours, mi-scorpion et 
 
 23.
 
-"
+";7.1;36;Grüdu hears that the Roman Emperor was assassinated by a scorpion in his bed, and resolves to be particularly vigilant about Arthur's beds.    ;"
+L’empereur romain a été assassiné par un scorpion dissimulé dans son lit. Grüdü, le garde du corps du roi, s’en trouve inspiré et décide de protéger Arthur, dans le lit de sa maîtresse Demetra, contre les scorpions.";"
+Alexandre Astier";"
+Alexandre Astier"
 23;1;23;La Potion De Fécondité;"
 J.SEVILLA – A.ASTIER
 
@@ -4016,7 +4082,10 @@ LÉODAGAN (OVER) — Ah bah, ça vient de là, alors…
 
 24
 
-"
+";7.6;38;Desperate to get an heir, Seli gets a fertility potion from Merlin.    ;"
+Dans l’espoir de faire naitre un héritier, Séli fait préparer une potion de fécondité par Merlin. Celle-ci s’avère néanmoins désastreuse et met Arthur dans un piteux état.";"
+Alexandre Astier";"
+Alexandre Astier"
 24;1;24;L’Interprète;"
 A.ASTIER
 
@@ -4189,7 +4258,10 @@ L’INTERPRÈTE (OVER) — Il restait que burgonde ou anglais… mais anglais, c
 
 25
 
-"
+";7.9;38;The Burgundian king brings an interpreter (Lorant Deutsch) who tries to give Arthur helpful advice on defeating the Burgundians.    ;"
+Arthur doit signer un traité avec les Burgondes, mais l’interprète du chef ennemi prend la parole pour les dissuader de plier devant les ultimatums. Même s’il est évident que le Roi Burgonde n'est pas une lumière, Arthur refuse de considérer l’avis d’un simple interprète. Contre son avis, père Blaise décide de recruter ce dernier en tant qu’interprète burgonde officiel de Kaamelott.";"
+Alexandre Astier";"
+Alexandre Astier"
 25;1;25;Le Sacrifice;"
 A.ASTIER
 
@@ -4334,7 +4406,10 @@ ARTHUR (OVER) — J’ai peut-être fait une connerie, moi.
 
 26
 
-"
+";7.9;33;;"
+Le château est en proie aux hurlements des loups, qui incitent Elias à venir réclamer au roi un sacrifice humain de taille : la reine. Arthur, Léodagan et Lancelot refusent catégoriquement.";"
+Alexandre Astier";"
+Alexandre Astier"
 26;1;26;À La Volette;"
 A.ASTIER
 
@@ -4523,7 +4598,10 @@ Elle s’est cassée. »
 
 27
 
-"
+";7.8;37;Arthur can't get that song out of his head-even during diplomatic or strategic meetings.    ;"
+Guenièvre a invité un ménestrel pendant le repas, mais à cause de celà, Arthur n'arrive pas à se concentrer lors d’une réunion militaire capitale, car une chanson lui reste dans la tête. Merlin lui ayant conseillé de chanter la chanson à voix haute jusqu'à la fin à chaque fois qu'il l'a en tête, le roi se retrouve dans une situation gênante quand il se retrouve à devoir le faire en plein milieu de différents réunions.";"
+Alexandre Astier";"
+Alexandre Astier"
 27;1;27;De Retour De Judée;"
 A.ASTIER
 
@@ -4692,7 +4770,10 @@ KARADOC (OVER) — Non, moi je dirais plutôt que ça pique.
 
 28
 
-"
+";7.5;37;Dagonet returns from the Holy Land with souvenirs and gifts for everybody. He almost found out where the Grail is, too.    ;"
+Le chevalier Dagonet est de retour d’une mission concernant la quête du Graal en Judée. Il aurait parlé avec un vieillard de la famille de Joseph d'Arimathie, qui lui aurait confié savoir où était la coupe sacrée, juste avant de mourir.";"
+Alexandre Astier";"
+Alexandre Astier"
 28;1;28;La Botte Secrète;"
 A.ASTIER
 
@@ -4875,7 +4956,10 @@ PERCEVAL (OVER) — C’est « côtelettes » que vous comprenez pas ?
 
 29
 
-"
+";8.9;42;"Karadoc teaches Perceval a ""secret move"" in conversations where one does not understand what is being said: ""That's not false."" Perceval gets in trouble with it, especially with his lady friend, Guenièvre's maid Angharad.    ";"
+Quand Karadoc ne comprend pas un mot, et qu’il ne souhaite pas « passer pour un gland », il répond à ses interlocuteurs : « C’est pas faux ». Perceval, instruit de cette « botte secrète », l’utilise à tort et à travers avec son amoureuse Angharad, ainsi qu’avec le roi et Lancelot, ce qui est propice à maints quiproquos.";"
+Alexandre Astier";"
+Alexandre Astier"
 29;1;29;L’Assassin De Kaamelott;"
 A.ASTIER
 
@@ -5046,7 +5130,10 @@ ARTHUR (OVER) — Enfin, après, vous faites comme vous voulez.
 
 30
 
-"
+";7.6;34;;"
+Bohort est terrifié : plusieurs servants ont été tués pendant la nuit. Un assassin rôde au château, et l’on découvre très vite qu’il s'agit de Grüdü, très zélé dans sa tâche de protection d’Arthur.";"
+Alexandre Astier";"
+Alexandre Astier"
 30;1;30;Le Trois De Cœur;"
 A.ASTIER
 
@@ -5227,7 +5314,10 @@ ARTHUR (OVER, respirant à pleins poumons) — Non, ça va. Par contre, je vais 
 
 31
 
-"
+";7.4;34;"Arthur has to share a bed with Demetra and Guenièvre; Demetra is trying to help Arthur's wife get some attention.    ";"
+Arthur se sent très mal à l’aise de devoir partager sa couche avec deux personnes : sa femme et sa maîtresse Demetra.";"
+Alexandre Astier";"
+Alexandre Astier"
 31;1;31;Basidiomycètes;"
 A.ASTIER
 
@@ -5400,7 +5490,10 @@ LÉODAGAN (OVER) — Non, je crois qu’ils sont juste cons.
 
 32
 
-"
+";7.7;33;Problems with a mushroom omelette on the battlefield.    ;"
+Quelques heures avant un assaut, a priori gagné d’avance, contre l’ennemi, les troupes d’Arthur se réunissent en forêt et mangent une omelette, avec des champignons soigneusement cueillis par Perceval et Karadoc. Toutefois, ceux-ci ne savent pas reconnaître les champignons dangereux, et bientôt de sérieux troubles gastriques éparpillent l’armée dans les fourrés.";"
+Alexandre Astier";"
+Alexandre Astier"
 32;1;32;L’Imposteur;"
 A.ASTIER
 
@@ -5581,7 +5674,10 @@ LANCELOT (OVER) — Non, mais quand on est sur place, c’est vraiment impressio
 
 33
 
-"
+";7.8;33;Arthur, returning from a trip, is surprised to have to share a bed with Bishop Boniface. They discuss social and moral issues, especially homosexuality.    ;"
+Arthur a de sérieux doutes sur Merlin, et le soupçonne de ne pas être un enchanteur. Il convoque Elias pour authentifier son laboratoire, et teste Merlin en présence de Lancelot. Malgré les sorts réalisés sur demande par Merlin, Arthur reste dubitatif.";"
+Alexandre Astier";"
+Alexandre Astier"
 33;1;33;Compagnons De Chambrée;"
 A.ASTIER
 
@@ -5722,7 +5818,10 @@ ARTHUR (OVER) — Heu, non. Laissez allumé. Je préfère.
 
 34
 
-"
+";7.5;33;Arthur, returning from a trip, is surprised to have to share a bed with Bishop Boniface. They discuss social and moral issues, especially homosexuality.    ;"
+Alors que Guenièvre est partie en voyage, Arthur partage sa chambre avec l’évêque Boniface, fervent défenseur de l’homosexualité au sein de l’Église.";"
+Alexandre Astier";"
+Alexandre Astier"
 34;1;34;La Grotte De Padraig;"
 A.ASTIER
 
@@ -5885,7 +5984,10 @@ ARTHUR (OVER) — Non mais je vais remonter une petite équipe, maintenant qu’
 
 35
 
-"
+";7.4;34;A quest from the Lady of the Lake to kill a monster in an underground maze.    ;"
+La Dame du Lac confie une mission à Arthur : tuer un ogre dans la grotte de Padraig. Arrivés près de la créature, Léodagan se plaint qu’il n’y a pas de récompense pendant que Bohort est terrifié. Tiraillé par ces deux avis, Arthur décide de faire demi-tour, en disant à la Dame du Lac qu'il n'a pas trouvé la grotte. Celle-ci trouve cela dommage, car il aurait pu récupérer l'émeraude géante que l'ogre avait avalée. Arthur essaie de se rattraper en lui promettant de se remettre en chasse dès le lendemain.";"
+Alexandre Astier";"
+Alexandre Astier"
 35;1;35;Ambidextrie;"
 A.ASTIER
 
@@ -6088,7 +6190,10 @@ PERCEVAL (OVER) — Pauvre con, va.
 
 36
 
-"
+";8.1;34;Perceval, when being briefed on a battle plan, insists that not only left and right but the compass points are relative.    ;"
+Perceval a de sérieux problèmes pour distinguer la droite de la gauche, ainsi qu’avec les points cardinaux. Cela rend difficile l’explication d’un plan de bataille par Arthur et Lancelot, qui s'obligent à se mettre à niveau vis-à-vis de Perceval.";"
+Alexandre Astier";"
+Alexandre Astier"
 36;1;36;Raison D’Argent;"
 A. ASTIER
 
@@ -6265,7 +6370,10 @@ SÉLI (OVER) — Avec les malheureux trois ronds que vous me faites tomber tous 
 
 37
 
-"
+";8.0;34;;"
+Alors que les caisses sont vides, Venec propose au roi de lui vendre de fausses pièces de monnaie, très ressemblantes. Arthur et Bohort sont scandalisés, mais Léodagan est favorable à cette idée (qui vient de lui). Jusqu’au moment où il apprend que le marchand vend aussi des pièces de Carmélide.";"
+Alexandre Astier";"
+Alexandre Astier"
 37;1;37;La Romance De Lancelot;"
 A.ASTIER
 
@@ -6442,7 +6550,10 @@ ARTHUR (OVER) — S’il se trouvait une gonzesse, il serait peut-être moins su
 
 38
 
-"
+";7.6;34;;"
+Lancelot, confident de la reine, est aussi secrètement amoureux d'elle, et tente de le lui faire comprendre lors d’une entrevue, en vain. Croyant qu’il lui parle d’une femme quelconque, elle lui conseille de tuer son rival : le mari. Lancelot fait alors irruption dans la salle de bain, dans l’intention de tuer Arthur, ce qu’il ne fera pas.";"
+Alexandre Astier";"
+Alexandre Astier"
 38;1;38;Merlin Et Les Loups;"
 A.ASTIER
 
@@ -6625,7 +6736,10 @@ Les hommes hurlent et se lancent à l’assaut des Vandales, soutenus par les ap
 
 39
 
-"
+";7.5;35;;"
+Les envahisseurs sont en marche. Arthur, Léodagan, Lancelot et l’armée de Kaamelott sont en position dans une forêt, et tentent de mettre en place un plan pour encercler l’ennemi – plan qui repose en grande partie sur l’intervention de Merlin et de son sort de « mur de flammes ». Seul problème : les loups grondent pour prévenir qu’une des leurs a été victime d’une fracture. Le druide doit donc choisir entre secourir la louve ou protéger Kaamelott. Il choisira la première solution, tandis que l’armée adverse viendra se fracasser contre Arthur et ses hommes.";"
+Alexandre Astier";"
+Alexandre Astier"
 39;1;39;Le Cas Yvain;"
 A.ASTIER
 
@@ -6788,7 +6902,10 @@ GUENIÈVRE (OVER) — Vous avez de la chance…
 
 40
 
-"
+";7.7;35;;"
+Yvain, fils de Léodagan et de Séli, est un jeune chevalier peu dynamique qui passe le plus clair de son temps à dormir et vadrouiller avec son ami Gauvain. Réunis autour de la Table ronde, Arthur et les parents discutent de l’avenir d’Yvain, tiraillé entre l’intimidation martiale du père et l’appui artistique de la mère.";"
+Alexandre Astier";"
+Alexandre Astier"
 40;1;40;L’Adoubement;"
 F.RAULT – A.ASTIER
 
@@ -6957,7 +7074,10 @@ PERCEVAL (OVER) — Ils auraient pu prendre « Chevaliérisation ».
 
 41
 
-"
+";7.9;40;;"
+Arthur s’aperçoit que Perceval n’a jamais été adoubé, et donc qu’il n’est pas officiellement un chevalier et n’a pas légitimement sa place autour de la Table ronde. Perceval, quant à lui, ne comprend pas pourquoi son armure ou son arme ne lui confèrent pas de légitimité. Arthur finira par adouber Perceval à la va-vite.";"
+Alexandre Astier";"
+Fabien Rault"
 41;1;41;Arthur Et Les Ténèbres;"
 A.ASTIER
 
@@ -7122,7 +7242,10 @@ ARTHUR (OVER) — Ouais… On y voit quand même carrément mieux avec la torche
 
 42
 
-"
+";7.5;33;;"
+Séli confie un secret à Léodagan : Arthur a peur du noir. Pour exploiter cette faille, Léodagan propose une mission en souterrain. Bohort propose que Merlin confectionne une potion de vision nocturne. Même s'il fait quelques difficultés pour éteindre sa torche, Arthur échappe aux quolibets de son beau-père.";"
+Alexandre Astier";"
+Alexandre Astier"
 42;1;42;Le Zoomorphe;"
 A.ASTIER
 
@@ -7293,7 +7416,10 @@ ARTHUR (OVER) — Quand vous l’avez écrasée, elle a fait des éclairs ou pas
 
 43
 
-"
+";7.8;33;;"
+Merlin, en tant qu’enchanteur, possède la faculté de se transformer en animal, suivant un calendrier druidique. Ainsi, Arthur découvre que le chat qui se promène sur son lit n’est autre que Merlin. Après avoir appris que la transformation suivante est l'araignée, le roi s'inquiète après avoir vu sa femme écraser l'une d'entre elles.";"
+Alexandre Astier";"
+Alexandre Astier"
 43;1;43;La Coccinelle De Madenn;"
 A.ASTIER
 
@@ -7468,7 +7594,10 @@ GUENIÈVRE (OVER) — Qu’est-ce que vous avez à souffler ?
 
 44
 
-"
+";7.7;33;;"
+Guethenoc accuse, en séance de doléances, le roi d'avoir fait un enfant à sa fille Madenn, qui nie qu'Arthur soit le père. Outré, protestant de sa bonne foi, le roi persuade le paysan de rentrer chez lui. Mais il s’avère qu’il est parfaitement au courant de sa paternité.";"
+Alexandre Astier";"
+Alexandre Astier"
 44;1;44;Patience Dans La Plaine;"
 A.ASTIER
 
@@ -7665,7 +7794,10 @@ ARTHUR (OVER) — Même nous, sur place, on s’est pas alarmés plus que ça.
 
 45
 
-"
+";7.3;33;;"
+Arthur et ses hommes sont sur le champ de bataille. Mais l’ennemi est absent et se fait attendre très longtemps.";"
+Alexandre Astier";"
+Alexandre Astier"
 45;1;45;Le Oud;"
 A.ASTIER
 
@@ -7834,7 +7966,10 @@ ARTHUR (OVER) — … toujours qu’on se fasse emmerder !
 
 46
 
-"
+";7.4;35;;"
+Perceval récupère un oud sur un camp égyptien déserté. C'est Arthur qui le récupère. Ses sérénades nostalgiques révèlent les doutes de Demetra, Guenièvre, Léodagan et Séli.";"
+Alexandre Astier";"
+Alexandre Astier"
 46;1;46;Le Code De Chevalerie;"
 F.RAULT – A.ASTIER
 
@@ -8021,7 +8156,10 @@ PERCEVAL (OVER) — Non, non, je vous fais confiance.
 
 47
 
-"
+";7.5;33;;"
+Le père Blaise et Léodagan ont traduit le code de chevalerie, originellement écrit en ancien Celte. Dès lors, les séances de la Table ronde font relâche les veilles de pleine lune, et les chevaliers ont droit de se retirer des assemblées lorsque leur honneur est bafoué publiquement. De plus, ils demandent de faire des pauses avant, après, et même durant les combats. Après réflexion, le roi décide de ne pas valider cette traduction.";"
+Alexandre Astier";"
+Fabien Rault"
 47;1;47;Létal;"
 A.ASTIER
 
@@ -8188,7 +8326,10 @@ ARTHUR (OVER) — Dans cinq ou dix ans, il y a plus que les barbares qui le fero
 
 48
 
-"
+";7.3;33;;"
+Arthur souhaiterait abolir la peine de mort en Bretagne, et limite son application à la simple pendaison. Léodagan et Lancelot considèrent ceci comme un spectacle nécessaire pour la justice, et proposent des méthodes plus variées.";"
+Alexandre Astier";"
+Alexandre Astier"
 48;1;48;Azénor;"
 A.ASTIER
 
@@ -8359,7 +8500,10 @@ ARTHUR (OVER) — Ça va bien, la parano !
 
 49
 
-"
+";7.6;33;;"
+Lors d’un banquet, Arthur a repéré une jeune femme, Azénor, qu’il convoque au château pour lui proposer de devenir l’une de ses maîtresses. Après avoir refusé par peur de devoir « faire le tapin », Azénor accepte, intéressée par le poste éventuel de reine.";"
+Alexandre Astier";"
+Alexandre Astier"
 49;1;49;Le Sort de Rage;"
 A.ASTIER
 
@@ -8536,7 +8680,10 @@ ARTHUR (OVER) — Nous, par contre, on s’est fait défoncer nos mouilles.
 
 50
 
-"
+";7.8;33;;"
+Arthur est las de voir ses hommes se battre mollement, et décide donc de faire envoyer par Merlin un sort de rage pour « remuer » ses troupes. Le sort touche aussi les troupes adverses et, très vite, les deux armées attaquent d’un commun accord Arthur et les chevaliers.";"
+Alexandre Astier";"
+Alexandre Astier"
 50;1;50;Les Nouveaux Frères;"
 A.ASTIER
 
@@ -8689,4 +8836,7 @@ YVAIN (OVER) — Je le prends pas, le bouclier, ça fait trop nul !
 
 
 
-"
+";7.5;33;;"
+Yvain et Gauvain sont réunis par Arthur en un « binôme de chevaliers » pour montrer leur vaillance. Léodagan n’est pas enthousiaste.";"
+Alexandre Astier";"
+Alexandre Astier"

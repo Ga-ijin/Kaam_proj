@@ -28,10 +28,11 @@ try:
     create_table_ep ='''CREATE TABLE episode
                             (ep_id SMALLSERIAL PRIMARY KEY,
                             livre SMALLINT NOT NULL,
-                            tome SMALLINT NOT NULL,
                             num_ep SMALLINT NOT NULL,
                             titre_ep VARCHAR (100) NOT NULL,
-                            script VARCHAR (5000) NOT NULL; '''
+                            script VARCHAR (10000) NOT NULL,
+                            resume_vf VARCHAR (1000),
+                            resume_va VARCHAR (1000)); '''
          
     cursor.execute(create_table_ep)
     conn.commit()
@@ -92,3 +93,14 @@ finally:
         cursor.close()
         conn.close()
         print("PostgreSQL connection is closed")
+        
+        
+# # Example
+# def run_method(n):
+#     for i in range(n):
+#         3 ** nfrom timeit import default_timer as timer
+# start_time = timer()
+# run_method(10000)
+# end_time = timer()
+# elapsed = end_time-start_time
+# print('function took {:.3f} ms'.format((elapsed)*1000.0))
