@@ -1,0 +1,44 @@
+﻿people_id;char_id;people_firstname;people_lastname
+1;1;Nicolas;Gabion
+2;2;Jean-Christophe;Hembert
+3;3;Alexandre;Astier
+4;4;Lionnel;Astier
+5;5;Franck;Pitiot
+6;6;Anne;Girouard
+7;7;Joëlle;Sevilla
+8;8;Yvan;Le Bolloc'h
+9;9;Jean-Robert;Lombard
+10;10;Audrey;Fleurot
+11;11;Thomas;Cousseau
+12;12;Alexis;Hénon
+13;13;Tony;Saba
+14;14;Lan;Truong
+15;15;Thibault;Roux
+16;16;Caroline;Pascal
+17;17;Didier;Bénureau
+18;18;Julien;Dutel
+19;19;Christian;Bujeau
+20;20;Simon;Astier
+21;21;Alain;Chapuis
+22;22;Stéphane;Margot
+23;23;Loïc;Varraut
+24;24;Elie;Semoun
+25;25;Jacques;Chambon
+26;26;Bruno;Fontaine
+27;27;Georges;Beller
+28;28;Guillaume;Briat
+29;29;Lorant;Deutsch
+30;30;Antoine;De Caunes
+31;31;Vanessa;Guedj
+32;32;Marcel;Philippot
+33;33;Serge;Papagalli
+34;34;Barbara;Schulz
+35;35;Emma;De Caunes
+36;36;Aurélien;Portehaut
+37;37;Bruno;Salomone
+38;38;Gilles;Graveleau
+39;39;Philippe;Nahon
+40;40;Josée;Drevon
+41;41;Denis;Maréchal
+42;42;Léa;Drucker
+43;;Fabien;Rault

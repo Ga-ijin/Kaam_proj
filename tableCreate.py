@@ -67,7 +67,7 @@ try:
     
     create_table_people ='''CREATE TABLE people
                                 (people_id SMALLSERIAL PRIMARY KEY,
-                                char_id SMALLSERIAL NOT NULL,
+                                char_id SMALLSERIAL,
                                 people_firstname VARCHAR (50) NOT NULL,
                                 people_lastname VARCHAR (50)); '''
  

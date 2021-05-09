@@ -11,7 +11,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
-import numpy as np
 import os
 
 dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj'
@@ -68,10 +67,10 @@ for el in epDesc:
     
 # In[5]: Création du df contenant l'ensemble
 
-dfEpComment = pd.DataFrame(rateClean, columns=['Note'])
-dfEpComment['NbVotes'] = nbVotesClean
-dfEpComment['resume_VA'] = epDescClean
-dfEpComment['resume_VF'] = ""
+dfEpComment = pd.DataFrame(rateClean, columns=['rating'])
+dfEpComment['nb_votes'] = nbVotesClean
+dfEpComment['resume_va'] = epDescClean
+dfEpComment['resume_vf'] = ""
 dfEpComment['Realisation'] = ""
 dfEpComment['Scenario'] = ""
 # del dfEpComment
@@ -103,14 +102,14 @@ for div in divs:
         
     resume = div.find("b", text="Résumé détaillé")
     if resume:
-        dfEpComment.loc[cptDf, 'resume_VF'] = (resume.findNext('div').text)
+        dfEpComment.loc[cptDf, 'resume_vf'] = (resume.findNext('div').text)
     cptDf+=1
 
 def stripping(case):
     case = case.replace("\n", " ").strip('"')
     return case
 
-dfEpComment["resume_VF"] = dfEpComment["resume_VF"].apply(stripping)
+dfEpComment["resume_vf"] = dfEpComment["resume_vf"].apply(stripping)
 
 # In[7]: Création des csv pour backup pour upload dans la base
     
@@ -118,13 +117,10 @@ dfEpComment["resume_VF"] = dfEpComment["resume_VF"].apply(stripping)
 
 dfEpisodes = pd.read_csv('csvEpisode_part1.csv', sep=';')
 dfFinal = dfEpisodes.join(dfEpComment, how='inner')
-# dfFinal.to_csv('csvFinal.csv', sep=';', index=False, encoding='utf-8')
-# dfTableEp = pd.DataFrame()
-dfTableEp = dfFinal[["ep_id","livre","num_ep","titre_ep","script","resume_VF","resume_VA"]]
-dfTableEp.columns=["ep_id","livre","num_ep","titre_ep","script","resume_vf","resume_va"]
+dfTableEp = dfFinal[["ep_id","livre","num_ep","titre_ep","script","resume_vf","resume_va"]]
 
 dfTableEp["script"] = dfTableEp["script"].apply(stripping)
+dfTableRating = dfFinal[["ep_id","rating","nb_votes"]]
 
-dfTableEp.to_csv('csvEpisode.csv', sep=';', encoding='utf-8', index=False, header=False)
-
-dfTest = pd.read_csv("csvEpisode.csv", sep=";")
+dfTableRating.to_csv('csvRating.csv', sep=';', encoding='utf-8', index=False)
+# dfTableEp.to_csv('csvEpisode.csv', sep=';', encoding='utf-8', index=False, header=False)
