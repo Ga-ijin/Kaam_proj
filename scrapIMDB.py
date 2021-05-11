@@ -124,3 +124,36 @@ dfTableRating = dfFinal[["ep_id","rating","nb_votes"]]
 
 dfTableRating.to_csv('csvRating.csv', sep=';', encoding='utf-8', index=False)
 # dfTableEp.to_csv('csvEpisode.csv', sep=';', encoding='utf-8', index=False, header=False)
+
+# In[8]: Création des listes de réal
+
+liste_reals = list(dfEpComment["Realisation"].apply(lambda x : x.strip("\n")).unique())
+liste_scena = list(dfEpComment["Scenario"].apply(lambda x : x.strip("\n")).unique())
+
+for item in liste_scena : 
+    if "-" in item : 
+        temp = item.split(" - ")
+        liste_scena.extend(temp)
+        liste_scena.remove(item)
+      
+liste_scena = list(set(liste_scena))
+
+for item in liste_reals : 
+    if "-" in item : 
+        temp = item.split(" - ")
+        liste_reals.extend(temp)
+        liste_reals.remove(item)
+        
+liste_reals = list(set(liste_reals))
+
+df_people = pd.read_csv("csvPeople.csv", sep=";")
+df_people["is_rea"] = False
+df_people["is_scenar"] = False
+
+for i in range(len(df_people)):
+    nom = df_people.loc[i, 'people_firstname']+ " " + df_people.loc[i,'people_lastname']
+    if nom in liste_reals:
+        df_people.loc[i,'is_rea'] = True
+    if nom in liste_scena:
+        df_people.loc[i,'is_scenar'] = True
+
