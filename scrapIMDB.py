@@ -71,9 +71,8 @@ dfEpComment = pd.DataFrame(rateClean, columns=['rating'])
 dfEpComment['nb_votes'] = nbVotesClean
 dfEpComment['resume_va'] = epDescClean
 dfEpComment['resume_vf'] = ""
-dfEpComment['Realisation'] = ""
-dfEpComment['Scenario'] = ""
-# del dfEpComment
+dfEpComment['rea'] = ""
+dfEpComment['scenar'] = ""
 
 # In[6]: Récupération du résumé des épisodes en VF sur Wikipedia
 
@@ -94,17 +93,18 @@ divs = soup.find_all('div', attrs={'style': 'background-color:#FFFFFF;padding: 5
 for div in divs:
     rea = div.find("b", text="Réalisation")
     if rea:
-        dfEpComment.loc[cptDf, 'Realisation'] = (rea.findNext('div').text)
+        dfEpComment.loc[cptDf, 'rea'] = (rea.findNext('div').text)
         
     scenar = div.find("b", text="Scénario")
     if scenar:
-        dfEpComment.loc[cptDf, 'Scenario'] = (scenar.findNext('div').text)
+        dfEpComment.loc[cptDf, 'scenar'] = (scenar.findNext('div').text)
         
     resume = div.find("b", text="Résumé détaillé")
     if resume:
         dfEpComment.loc[cptDf, 'resume_vf'] = (resume.findNext('div').text)
     cptDf+=1
 
+# Retrait des sauts de ligne
 def stripping(case):
     case = case.replace("\n", " ").strip('"')
     return case
@@ -115,20 +115,19 @@ dfEpComment["resume_vf"] = dfEpComment["resume_vf"].apply(stripping)
     
 #Table episode [suite] sur base du csv partiellement rempli
 
-dfEpisodes = pd.read_csv('csvEpisode_part1.csv', sep=';')
+dfEpisodes = pd.read_csv('rawData/csvEpisode_part1.csv', sep=';')
 dfFinal = dfEpisodes.join(dfEpComment, how='inner')
 dfTableEp = dfFinal[["ep_id","livre","num_ep","titre_ep","script","resume_vf","resume_va"]]
 
 dfTableEp["script"] = dfTableEp["script"].apply(stripping)
 dfTableRating = dfFinal[["ep_id","rating","nb_votes"]]
 
-dfTableRating.to_csv('csvRating.csv', sep=';', encoding='utf-8', index=False)
-# dfTableEp.to_csv('csvEpisode.csv', sep=';', encoding='utf-8', index=False, header=False)
+dfTableRating.to_csv('csvImportData/csvRating.csv', sep=';', encoding='utf-8', index=False)
 
 # In[8]: Création des listes de réal
 
-liste_reals = list(dfEpComment["Realisation"].apply(lambda x : x.strip("\n")).unique())
-liste_scena = list(dfEpComment["Scenario"].apply(lambda x : x.strip("\n")).unique())
+liste_reals = list(dfEpComment["rea"].apply(lambda x : x.strip("\n")).unique())
+liste_scena = list(dfEpComment["scenar"].apply(lambda x : x.strip("\n")).unique())
 
 for item in liste_scena : 
     if "-" in item : 
@@ -146,7 +145,7 @@ for item in liste_reals :
         
 liste_reals = list(set(liste_reals))
 
-df_people = pd.read_csv("csvPeople.csv", sep=";")
+df_people = pd.read_csv("csvImportData/csvPeople.csv", sep=";")
 df_people["is_rea"] = False
 df_people["is_scenar"] = False
 
@@ -156,4 +155,3 @@ for i in range(len(df_people)):
         df_people.loc[i,'is_rea'] = True
     if nom in liste_scena:
         df_people.loc[i,'is_scenar'] = True
-

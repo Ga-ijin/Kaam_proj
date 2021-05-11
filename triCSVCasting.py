@@ -9,7 +9,7 @@ import pandas as pd
 from itertools import compress
 import os
 
-dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj\csvImport'
+dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj\csvImportData'
 os.chdir(dir)
 
 dfChara = pd.read_csv("csvCharacters.csv", sep=";")

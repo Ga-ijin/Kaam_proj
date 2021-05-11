@@ -13,9 +13,9 @@ import numpy as np
 dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj'
 os.chdir(dir)
 
-text = open('kaam_script_livre1part1_CLEANED.txt', "r", encoding = 'utf-8')
-list_ep_txt = open("list_ep.txt", 'r', encoding = 'utf-8')
-list_persos = pd.read_csv('list_persos.csv', sep=";", encoding = 'utf-8')
+text = open('rawData/kaam_script_livre1part1_CLEANED.txt', "r", encoding = 'utf-8')
+list_ep_txt = open("rawData/list_ep.txt", 'r', encoding = 'utf-8')
+list_persos = pd.read_csv('rawData/list_persos.csv', sep=";", encoding = 'utf-8')
 
 dfEpisodes = pd.DataFrame()
 dfPersos = pd.DataFrame()
@@ -38,7 +38,7 @@ for line in list_ep_txt:
 
 dfEpisodes = pd.DataFrame(list_ep, columns=['livre', 'num_ep','titre_ep'])
 
-dfPersos = pd.DataFrame(list_persos, columns=['char_id','char_name', 'char_descr', 'knight'])
+# dfPersos = pd.DataFrame(list_persos, columns=['char_id','char_name', 'char_descr', 'knight'])
 
 # In[3]: Séparation des scripts des épisodes
     
@@ -63,6 +63,6 @@ dfEpisodes.insert(0,'ep_id', np.arange(1,nbEp+1))
 
 # In[4]: Création des csv pour backup pour upload dans la base
 
-dfEpisodes.to_csv('csvEpisode_part1.csv', sep=';', index=False, encoding="utf-8")
-dfPersos.to_csv('csvPersos.csv', sep=';', index=False, encoding='utf-8')
+dfEpisodes.to_csv('rawData/csvEpisode_part1.csv', sep=';', index=False, encoding="utf-8")
+# dfPersos.to_csv('csvImportData/csvPersos.csv', sep=';', index=False, encoding='utf-8')
 
