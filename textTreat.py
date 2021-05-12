@@ -59,7 +59,7 @@ dfEpisodes['script'] = list_script
 text.close()
 
 nbEp = len(dfEpisodes)
-dfEpisodes.insert(0,'ep_id', np.arange(1,nbEp+1))
+# dfEpisodes.insert(0,'ep_id', np.arange(1,nbEp+1))
 
 # In[4]: Création des csv pour backup pour upload dans la base
 

@@ -124,7 +124,7 @@ dfTableRating = dfFinal[["ep_id","rating","nb_votes"]]
 
 dfTableRating.to_csv('csvImportData/csvRating.csv', sep=';', encoding='utf-8', index=False)
 
-# In[8]: Création des listes de réal
+# In[8]: Qui est réalisateur ? Scénariste ?
 
 liste_reals = list(dfEpComment["rea"].apply(lambda x : x.strip("\n")).unique())
 liste_scena = list(dfEpComment["scenar"].apply(lambda x : x.strip("\n")).unique())
@@ -145,13 +145,52 @@ for item in liste_reals :
         
 liste_reals = list(set(liste_reals))
 
-df_people = pd.read_csv("csvImportData/csvPeople.csv", sep=";")
-df_people["is_rea"] = False
-df_people["is_scenar"] = False
+liste_reals_firstname = [i.split(' ')[0] for i in liste_reals] 
+liste_reals_lastname = [i.split(' ', maxsplit=1)[1] for i in liste_reals] 
+liste_scenas_firstname = [i.split(' ')[0] for i in liste_scena] 
+liste_scenas_lastname = [i.split(' ', maxsplit=1)[1] for i in liste_scena] 
 
-for i in range(len(df_people)):
-    nom = df_people.loc[i, 'people_firstname']+ " " + df_people.loc[i,'people_lastname']
-    if nom in liste_reals:
-        df_people.loc[i,'is_rea'] = True
-    if nom in liste_scena:
-        df_people.loc[i,'is_scenar'] = True
+dataDictRea = {'rea_firstname':pd.Series(liste_reals_firstname), 'rea_lastname':pd.Series(liste_reals_lastname)}
+dfCheckRea = pd.DataFrame(dataDictRea)
+dataDictScenar = {'scenar_firstname':pd.Series(liste_scenas_firstname), 'scenar_lastname':pd.Series(liste_scenas_lastname)}
+dfCheckScenar = pd.DataFrame(dataDictScenar)
+
+df_people = pd.read_csv("csvImportData/csvPeople.csv", sep=";")
+df_people['people_id']=range(1, len(df_people)+1)
+
+
+dfCrew = pd.DataFrame(range(1, len(dfEpisodes)+1), columns=["ep_id"])
+dfTemp = pd.DataFrame(liste_scena, columns=["people_id"])
+dfCrew['key'] = 0
+dfTemp['key'] = 0
+dfCrew = dfCrew.merge(dfTemp, on="key", how="outer").drop("key", axis=1)
+
+dfCrew["is_rea"] = False
+dfCrew["is_scenar"] = False
+
+
+for i in range(len(dfCrew)) :
+    dfCrew.at[i,"is_rea"] =  dfCrew.at[i,"people_id"] in dfEpComment.at[dfCrew.at[i,"ep_id"]-1,"rea"]
+    dfCrew.at[i,"is_scenar"] =  dfCrew.at[i,"people_id"] in dfEpComment.at[dfCrew.at[i,"ep_id"]-1,"scenar"]
+
+dfFinal = pd.DataFrame(columns=["ep_id",'people_id','is_rea','is_scenar'])
+for i in range(len(dfCrew)) :
+    if (dfCrew.at[i,'is_rea'] == False) & (dfCrew.at[i,'is_scenar'] == False):
+        dfCrew = dfCrew.drop([i])
+
+df_people['checkName'] = df_people['people_firstname'] + ' ' + df_people['people_lastname']
+
+dicIdRea = {df_people.loc[df_people['checkName'].isin(liste_reals)]['checkName'].iat[0] : 
+            df_people.loc[df_people['checkName'].isin(liste_reals)]['people_id'].iat[0]}
+    
+for key in dicIdRea:
+    dfCrew['people_id'][dfCrew['people_id']== key] = dicIdRea[key]
+
+dicIdScenar = {}
+for i in range(len(liste_scena)):
+    dicIdScenar[ df_people.loc[df_people['checkName'].isin(liste_scena)]['checkName'].iat[i] ] = df_people.loc[df_people['checkName'].isin(liste_scena)]['people_id'].iat[i]
+
+for key in dicIdScenar:
+    dfCrew['people_id'][dfCrew['people_id']== key] = dicIdScenar[key]
+    
+dfCrew.to_csv('csvImportData/csvCrew.csv', sep=';', encoding='utf-8', index=False)

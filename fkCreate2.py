@@ -23,18 +23,29 @@ try:
                               password=login['password'],
                               host="127.0.0.1",
                               port="5432",
-                              database="kaam_db")    
+                              database="kaam_db2")    
     cursor = conn.cursor()
     
-    create_fk_rating = ''' ALTER TABLE rating
-                        ADD CONSTRAINT fk_rating_ep
-                        FOREIGN KEY(ep_id)
-                        REFERENCES episode(ep_id)
-                        ON DELETE CASCADE
-                        ON UPDATE CASCADE;'''
-    cursor.execute(create_fk_rating)
-    conn.commit()
-    print("FK 'fk_rating_ep' created successfully in PostgreSQL")
+    # create_primary_keys = ''' ALTER TABLE episode
+    #                         ADD COLUMN ep_id SMALLSERIAL PRIMARY KEY;
+    #                         ALTER TABLE people
+    #                         ADD COLUMN people_id SMALLSERIAL PRIMARY KEY;
+    #                         ALTER TABLE character
+    #                         ADD COLUMN char_id SMALLSERIAL PRIMARY KEY;'''
+    
+    # cursor.execute(create_primary_keys)
+    # conn.commit()
+    # print("PK created successfully in PostgreSQL")
+    
+    # create_fk_rating = ''' ALTER TABLE rating
+    #                     ADD CONSTRAINT fk_rating_ep
+    #                     FOREIGN KEY(ep_id)
+    #                     REFERENCES episode(ep_id)
+    #                     ON DELETE CASCADE
+    #                     ON UPDATE CASCADE;'''
+    # cursor.execute(create_fk_rating)
+    # conn.commit()
+    # print("FK 'fk_rating_ep' created successfully in PostgreSQL")
     
     create_fks_casting_ep_char = ''' ALTER TABLE casting
                             ADD CONSTRAINT fk_casting_ep
@@ -77,9 +88,6 @@ try:
     cursor.execute(create_fks_crew_ep_people)
     conn.commit()
     print("FK 'fks_crew_ep_people' created successfully in PostgreSQL")
-
-except (Exception, Error) as error:
-    print("Unable to connect to the database", error)
     
 finally:
     if conn:
