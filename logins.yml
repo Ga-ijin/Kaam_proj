@@ -1,3 +1,4 @@
 postgres:
     user: "postgres"
     password: "8774755"
+    db: "kaam_db2"

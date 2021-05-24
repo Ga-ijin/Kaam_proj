@@ -1,44 +1,44 @@
-﻿char_name;char_descr;knight
-BOHORT;Roi de Gaunes;1
-KARADOC;Chevalier de Vannes;1
-ARTHUR;Roi de Bretagne;1
-LÉODAGAN;Roi de Carmélide, père de Guenièvre;1
-PERCEVAL;Chevalier du pays de Galles;1
-GUENIÈVRE;Reine de Bretagne;0
-SÉLI;Reine de Carmélide, mère de Guenièvre;0
-BRECCAN;Artisan;0
-PÈRE BLAISE;Prêtre chrétien;0
-LA DAME DU LAC;Fée;0
-LANCELOT;Chevalier du Lac;1
-GALESSIN;Duc d'Orcanie;1
-HERVÉ DE RINEL;Chevalier;1
-ATTILA;Chef des Huns;0
-GRÜDÜ;Guerrier;0
-DEMETRA;Maîtresse d'Arthur;0
-BUZIT;Barde;0
-KAY;Sonneur;0
-LE MAÎTRE D'ARMES;;0
-YVAIN;Chevalier au Lion, frère de Guenièvre;1
-LE TAVERNIER;;0
-CALOGRENANT;Roi de Calédonie;1
-VENEC;Marchand;0
-LE RÉPURGATEUR;Inquisiteur chrétien;0
-MERLIN;Enchanteur;0
-ÉLIAS DE KELLIWIC'H;Enchanteur;0
-JACCA;Seigneur breton;0
-LE ROI BURGONDE;;0
-L’INTERPRÈTE;;0
-DAGONET;Chevalier breton;1
-ANGHARAD;Suivante de Guenièvre;0
-BONIFACE;Évèque de Germanie;0
-GUETHENOC;Paysan;0
-MADENN;Maîtresse d'Arthur, fille de Guetenoc;0
-AZÉNOR;Maîtresse d'Arthur;0
-GAUVAIN;Neveu d'Arthur;1
-CAIUS CAMILLUS;Centurion romain;0
-ROPARZ;Paysan;0
-GOUSTAN;Père de Léodagan;0
-YGERNE;Reine de Tintagel, mère d'Arthur;0
-NARSÈS;Eunuque, général de Byzance;0
-LA FÉE MORGANE;;0
-PENDRAGON;Spectre du père d'Arthur;0
+﻿char_id;char_name;char_descr;knight
+1;BOHORT;Roi de Gaunes;1
+2;KARADOC;Chevalier de Vannes;1
+3;ARTHUR;Roi de Bretagne;1
+4;LÉODAGAN;Roi de Carmélide, père de Guenièvre;1
+5;PERCEVAL;Chevalier du pays de Galles;1
+6;GUENIÈVRE;Reine de Bretagne;0
+7;SÉLI;Reine de Carmélide, mère de Guenièvre;0
+8;BRECCAN;Artisan;0
+9;PÈRE BLAISE;Prêtre chrétien;0
+10;LA DAME DU LAC;Fée;0
+11;LANCELOT;Chevalier du Lac;1
+12;GALESSIN;Duc d'Orcanie;1
+13;HERVÉ DE RINEL;Chevalier;1
+14;ATTILA;Chef des Huns;0
+15;GRÜDÜ;Guerrier;0
+16;DEMETRA;Maîtresse d'Arthur;0
+17;BUZIT;Barde;0
+18;KAY;Sonneur;0
+19;LE MAÎTRE D'ARMES;;0
+20;YVAIN;Chevalier au Lion, frère de Guenièvre;1
+21;LE TAVERNIER;;0
+22;CALOGRENANT;Roi de Calédonie;1
+23;VENEC;Marchand;0
+24;LE RÉPURGATEUR;Inquisiteur chrétien;0
+25;MERLIN;Enchanteur;0
+26;ÉLIAS DE KELLIWIC'H;Enchanteur;0
+27;JACCA;Seigneur breton;0
+28;LE ROI BURGONDE;;0
+29;L’INTERPRÈTE;;0
+30;DAGONET;Chevalier breton;1
+31;ANGHARAD;Suivante de Guenièvre;0
+32;BONIFACE;Évèque de Germanie;0
+33;GUETHENOC;Paysan;0
+34;MADENN;Maîtresse d'Arthur, fille de Guetenoc;0
+35;AZÉNOR;Maîtresse d'Arthur;0
+36;GAUVAIN;Neveu d'Arthur;1
+37;CAIUS CAMILLUS;Centurion romain;0
+38;ROPARZ;Paysan;0
+39;GOUSTAN;Père de Léodagan;0
+40;YGERNE;Reine de Tintagel, mère d'Arthur;0
+41;NARSÈS;Eunuque, général de Byzance;0
+42;LA FÉE MORGANE;;0
+43;PENDRAGON;Spectre du père d'Arthur;0

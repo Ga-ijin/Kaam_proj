@@ -5,7 +5,6 @@ Created on Tue May 11 11:14:27 2021
 @author: Ga
 """
 
-from sqlalchemy.exc import SQLAlchemyError
 import yaml
 import os
 import pandas as pd
@@ -31,7 +30,7 @@ def maxLen(dfColumn):
 # Création des tables de la bdd kaam_db
 
 try:    
-    episode = pd.read_csv('csvImportData/csvEpisode.csv', sep=";")
+    episode = pd.read_csv('csvImportData/csvEpisode2.csv', sep=";")
     lenTitreEp =maxLen(episode['titre_ep'])
     lenScript =maxLen(episode['script'])
     lenResumeVF =maxLen(episode['resume_vf'])
@@ -65,7 +64,7 @@ try:
                     index = False,
                     dtype=
                         {'ep_id': types.SmallInteger,
-                         'rating': types.SmallInteger,
+                         'rating': types.FLOAT,
                          'nb_votes': types.SmallInteger}
                     )
     print("Table 'rating' created successfully in PostgreSQL")

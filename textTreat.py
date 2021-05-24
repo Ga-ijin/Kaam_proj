@@ -13,8 +13,8 @@ import numpy as np
 dir = r'C:\Users\Ga\Documents\GitHub\Kaam_proj'
 os.chdir(dir)
 
-text = open('rawData/kaam_script_livre1part1_CLEANED.txt', "r", encoding = 'utf-8')
-list_ep_txt = open("rawData/list_ep.txt", 'r', encoding = 'utf-8')
+text = open('rawData/kaam_script_livre1part2_CLEANED.txt', "r", encoding = 'utf-8')
+list_ep_txt = open("rawData/list_ep2.txt", 'r', encoding = 'utf-8')
 list_persos = pd.read_csv('rawData/list_persos.csv', sep=";", encoding = 'utf-8')
 
 dfEpisodes = pd.DataFrame()
@@ -63,6 +63,6 @@ nbEp = len(dfEpisodes)
 
 # In[4]: Création des csv pour backup pour upload dans la base
 
-dfEpisodes.to_csv('rawData/csvEpisode_part1.csv', sep=';', index=False, encoding="utf-8")
+dfEpisodes.to_csv('rawData/csvEpisode_part2.csv', sep=';', index=False, encoding="utf-8")
 # dfPersos.to_csv('csvImportData/csvPersos.csv', sep=';', index=False, encoding='utf-8')
 

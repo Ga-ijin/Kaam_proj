@@ -14,7 +14,7 @@ os.chdir(dir)
 
 dfChara = pd.read_csv("csvCharacters.csv", sep=";")
 
-dfEp = pd.read_csv("csvEpisode.csv", sep=";" )
+dfEp = pd.read_csv("csvEpisode2.csv", sep=";" )
 
 dfEp["liste_persos"] = 0
 dfEp["liste_persos"] = dfEp["liste_persos"].astype(object)
@@ -35,4 +35,4 @@ df_final = df_ex[["ep_id","liste_persos"]]
 df_final = df_final.merge(dfChara, how ='left', left_on = 'liste_persos', right_on = 'char_name')
 df_final = df_final[['ep_id','char_id']]
 
-df_final.to_csv('csvCasting.csv', sep=';', encoding='utf-8', index=False)
+df_final.to_csv('csvCasting2.csv', sep=';', encoding='utf-8', index=False)

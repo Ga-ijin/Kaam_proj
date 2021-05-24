@@ -115,14 +115,15 @@ dfEpComment["resume_vf"] = dfEpComment["resume_vf"].apply(stripping)
     
 #Table episode [suite] sur base du csv partiellement rempli
 
-dfEpisodes = pd.read_csv('rawData/csvEpisode_part1.csv', sep=';')
+dfEpisodes = pd.read_csv('rawData/csvEpisode_part0.csv', sep=';')
 dfFinal = dfEpisodes.join(dfEpComment, how='inner')
 dfTableEp = dfFinal[["ep_id","livre","num_ep","titre_ep","script","resume_vf","resume_va"]]
 
 dfTableEp["script"] = dfTableEp["script"].apply(stripping)
+dfTableEp.to_csv('csvImportData/csvEpisode2.csv', sep=';', encoding='utf-8', index=False)
 dfTableRating = dfFinal[["ep_id","rating","nb_votes"]]
 
-dfTableRating.to_csv('csvImportData/csvRating.csv', sep=';', encoding='utf-8', index=False)
+dfTableRating.to_csv('csvImportData/csvRating2.csv', sep=';', encoding='utf-8', index=False)
 
 # In[8]: Qui est réalisateur ? Scénariste ?
 
@@ -193,4 +194,4 @@ for i in range(len(liste_scena)):
 for key in dicIdScenar:
     dfCrew['people_id'][dfCrew['people_id']== key] = dicIdScenar[key]
     
-dfCrew.to_csv('csvImportData/csvCrew.csv', sep=';', encoding='utf-8', index=False)
+dfCrew.to_csv('csvImportData/csvCrew2.csv', sep=';', encoding='utf-8', index=False)
