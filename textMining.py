@@ -6,7 +6,6 @@ Created on Thu May 13 16:22:49 2021
 """
 # In[0]: libraries
 import pandas as pd
-import psycopg2
 from sqlalchemy import create_engine
 import yaml
 import os
@@ -24,9 +23,6 @@ from nltk.corpus import stopwords
 from collections import Counter
 import seaborn as sns
 
-from datetime import date
-
-import sys
 import string
 import re
 
